@@ -47,7 +47,7 @@ The interface should allow for the definition of these and other validation rule
   - Value / regex
   - Validation message
 #### String type
-- For the **string** type, user can enter regex as an input. So the following criteria will be covered using suitable regular expressions.
+- Using the **string** type, user can enter regex as an input. So the following criteria will be covered using suitable regular expressions.
   - The input must begin with a capital letter.
   - The input must match a specific pattern (e.g., an email format).
   - The input must not contain any special characters.
@@ -55,3 +55,23 @@ The interface should allow for the definition of these and other validation rule
 - Users can check the string length validations with regex, Eg - 10 characters only `/^[a-z]{0,10}$/`
 - Users can check multiple regex values with multiple validation rules. Eg - Users can check string contains alphabet characters `/^[a-zA-Z]+$/` and vowels `/^[aeiou]$/` with 2 different regex values.
 - If the 2 regex values conflicts, user will not get the correct result.
+
+#### Number type
+- Using the **number** type, user can do following operations.
+  - Greater Than **( > )**
+  - Greater Than Or Equal **( >= )**
+  - Less Than **( < )**
+  - Less Than Or Equal **( <= )**
+  - Equal **( == )**
+- So the following criteria will be covered using suitable operations.
+  - The entered value must be greater than or equal to 5.
+- Users can perform range operation with multiple validation rules. Eg - Value should be greater than 5 and value should be less than 10. (5 - 10 range)
+#### Date type
+- Using the **date** type, user can do following operations.
+  - Greater Than **( > )**
+  - Greater Than Or Equal **( >= )**
+  - Less Than **( < )**
+  - Less Than Or Equal **( <= )**
+  - Equal **( == )**
+- Users can check above mentioned comparison with another date.
+- mui date string is considered as the input. So users cannot change the date format in the form.
