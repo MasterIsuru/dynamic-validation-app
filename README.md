@@ -33,3 +33,10 @@ The interface should allow for the definition of these and other validation rule
 - To run the unit tests, use `npm run test`.
 - To get coverage report, use `npm run coverage`.
 
+### 2. Thoughts and insights:
+
+- I have implemented the required validations for following field types ('number' , 'string', 'date').
+- The input must begin with a capital letter.
+- The input must match a specific pattern (e.g., an email format).
+- The input must not contain any special characters.
+- The input must be a valid date. 
