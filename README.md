@@ -46,9 +46,12 @@ The interface should allow for the definition of these and other validation rule
   - Validation type
   - Value / regex
   - Validation message
+#### String type
 - For the **string** type, user can enter regex as an input. So the following criteria will be covered using suitable regular expressions.
   - The input must begin with a capital letter.
   - The input must match a specific pattern (e.g., an email format).
   - The input must not contain any special characters.
-  - The input must be a valid date. 
-- Users can check multiple regex values with multiple validation rules. Eg - Users can check string contains alphabet characters `/^[a-zA-Z]+$/` and vowels `/^[aeiou]$/` with 2 different regex values. If the 2 regex values conflicts, user will not get the correct result.
+  - The input must be a valid date.
+- Users can check the string length validations with regex, Eg - 10 characters only `/^[a-z]{0,10}$/`
+- Users can check multiple regex values with multiple validation rules. Eg - Users can check string contains alphabet characters `/^[a-zA-Z]+$/` and vowels `/^[aeiou]$/` with 2 different regex values.
+- If the 2 regex values conflicts, user will not get the correct result.
