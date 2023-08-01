@@ -24,16 +24,12 @@ In addition to basic field type validation, we need a feature that allows additi
 
 The interface should allow for the definition of these and other validation rules, without requiring modifications to the codebase for each new rule. The specifics of how you enable this dynamic rule-setting are up to you, but we're looking for an innovative, flexible, and scalable solution.
 
-## Submission:
-
-Submit your solution by pushing your code to a public GitHub repository. Ensure your code is clean, well-commented, and adheres to our current project structure. Also, include a README file that explains your thought process and the design of your solution.
-
-## Evaluation Criteria:
-
-- The code must be clean, efficient and well-commented.
-- The solution should successfully implement the features described above.
-- The design should be scalable and maintainable, allowing for the possibility of adding more validation types in the future.
-- The README file should provide clear insight into your thought process and the rationale behind your design decisions.
-
 ## Code Implementation:
+
+### 1. Steps to run the project:
+
+- Use `npm i` to install dependencies.
+- Then use `npm run dev` to start dev server.
+- To run the unit tests, use `npm run test`.
+- To get coverage report, use `npm run coverage`.
 
