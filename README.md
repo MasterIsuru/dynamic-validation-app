@@ -35,11 +35,14 @@ The interface should allow for the definition of these and other validation rule
 
 ### 2. Thoughts and insights:
 
-- I have implemented the required validations for following field types. (boolean is skipped because it has only one value)
+- The implementation has required validations for following field types. (boolean is skipped because it has only one value)
   - number
   - string
   - date
-- The input must begin with a capital letter.
-- The input must match a specific pattern (e.g., an email format).
-- The input must not contain any special characters.
-- The input must be a valid date. 
+- Users can add required validations and check the validation message if the field is empty.
+- The implementation has multiple validation rules input functionality. So the user can add multiple conditions to the input fields.
+- For the **string** type, user can enter regex as an input. So the following criteria will be covered using suitable regular expressions.
+  - The input must begin with a capital letter.
+  - The input must match a specific pattern (e.g., an email format).
+  - The input must not contain any special characters.
+  - The input must be a valid date. 
