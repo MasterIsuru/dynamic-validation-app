@@ -79,35 +79,40 @@ const useFormValidate = () => {
     rules.every((item: ValidationRule) => {
       switch (item.type) {
         case NumberValidationTypes.GreaterThan:
-          if (value <= item.value) {
+          if (Number(value) <= Number(item.value)) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         case NumberValidationTypes.GreaterThanOrEqualsTo:
-          if (value < item.value) {
+          if (Number(value) < Number(item.value)) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         case NumberValidationTypes.LessThan:
-          if (value >= item.value) {
+          if (Number(value) >= Number(item.value)) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         case NumberValidationTypes.LessThanOrEqualsTo:
-          if (value > item.value) {
+          if (Number(value) > Number(item.value)) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         case NumberValidationTypes.Equal:
-          if (value !== item.value) {
+          if (Number(value) !== Number(item.value)) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         default:
           return true;
       }
