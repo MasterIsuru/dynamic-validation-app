@@ -39,32 +39,37 @@ const useFormValidate = () => {
           if (formValue.getTime() <= validationValue.getTime()) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         case NumberValidationTypes.GreaterThanOrEqualsTo:
           if (formValue.getTime() < validationValue.getTime()) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         case NumberValidationTypes.LessThan:
           if (formValue.getTime() >= validationValue.getTime()) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         case NumberValidationTypes.LessThanOrEqualsTo:
           if (formValue.getTime() > validationValue.getTime()) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         case NumberValidationTypes.Equal:
           if (formValue.getTime() !== validationValue.getTime()) {
             errorStatus = true;
             errorMessage = item?.message;
+            return false;
           }
-          return false;
+          return true;
         default:
           return true;
       }

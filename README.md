@@ -66,6 +66,7 @@ The interface should allow for the definition of these and other validation rule
 - So the following criteria will be covered using suitable operations.
   - The entered value must be greater than or equal to 5.
 - Users can perform range operation with multiple validation rules. Eg - Value should be greater than 5 and value should be less than 10. (5 - 10 range)
+- Users can add multiple conditions with multiple validation rules. Eg - Value should be greater than 10 and value should be 20.
 #### Date type
 - Using the **date** type, user can do following operations.
   - Greater Than **( > )**
@@ -75,3 +76,5 @@ The interface should allow for the definition of these and other validation rule
   - Equal **( == )**
 - Users can check above mentioned comparison with another date.
 - mui date string is considered as the input. So users cannot change the date format in the form.
+- Users can add multiple conditions with multiple validation rules. Eg - Date should be greater than 08/01/2023 and date should be 08/10/2023.
+- Users can perform date range operation with multiple validation rules. Eg - Date should be greater than 08/01/2023 and date should be less than 08/10/2023. (08/01/2023 - 08/10/2023 range)
